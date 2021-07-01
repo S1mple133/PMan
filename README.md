@@ -8,30 +8,4 @@ Set a postgresql database up (you can use docker to make it easy.)
 
 ## For Developers
 
-* Login: ```POST /auth/login```
-  * Header Param ```Content-Type: application/json```
-  * Parameters
-    ```
-    {
-    "username": "iloveauth@example.com",
-    "password": "abcd1234"
-    }
-    ```
-  * Response: Token as text
-    
-
-* Passwords Overview: ```GET /overview```
-  * Head Parameter: ```Token: <INSERT TOKEN HERE>```
-  * Response
-  ```
-    [{
-      "id": "085cc0c5-f170-4693-9f5f-349bcd2c0424",
-      "application": "google.com",
-      "user": "s1mple133"
-    },
-    {
-      "id": "df533ed7-bc47-478e-b997-1d5d4078032d",
-      "application": "facebook.com",
-      "user": "s1mple133"
-    }]
-  ```
+[REST API](docs/restapi.md): DOCs on how to use the API
