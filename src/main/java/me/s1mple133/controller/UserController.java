@@ -96,6 +96,8 @@ public class UserController {
             preparedStatement.setString(2, username);
             preparedStatement.setString(3, password);
             preparedStatement.setString(4, email);
+            preparedStatement.execute();
+            return true;
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
