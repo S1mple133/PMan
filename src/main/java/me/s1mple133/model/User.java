@@ -1,8 +1,5 @@
 package me.s1mple133.model;
 
-import me.s1mple133.controller.UserController;
-
-import java.util.Timer;
 import java.util.UUID;
 
 public class User {
@@ -10,8 +7,6 @@ public class User {
     private UUID sessionID;
     private String username;
     private String password;
-
-    private Timer sessionTimer;
 
     public User(UUID id, String username, String password) {
         this.id = id;

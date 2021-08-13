@@ -8,7 +8,6 @@ import me.s1mple133.model.User;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.net.HttpURLConnection;
 
 @Path("/overview")
 public class Overview {
