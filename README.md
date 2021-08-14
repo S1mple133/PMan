@@ -9,3 +9,5 @@ Set a postgresql database up (you can use docker to make it easy.)
 ## For Developers
 
 [REST API](docs/restapi.md): DOCs on how to use the API
+
+https://github.com/naichinger/PMAN-web-ui: Basic Web UI for testing PMAN
