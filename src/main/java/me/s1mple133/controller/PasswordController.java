@@ -50,6 +50,27 @@ public class PasswordController {
         return result;
     }
 
+    /**
+     * inserts a new password overview
+     * @param user
+     * @param overview
+     */
+    public boolean insertUserOverview(User user, PasswordOverview overview) {
+        try (Connection conn = Database.getInstance().getConnection();
+             PreparedStatement prst = conn.prepareStatement("INSERT INTO P_Passwords(P_USER_ID, P_ID, P_USER, P_APPLICATION, P_PASS) VALUES(?,?,?,?,?)")) {
+            prst.setString(1, user.getId().toString());
+            prst.setString(2, overview.getId().toString());
+            prst.setString(3, overview.getUser().toString());
+            prst.setString(4, overview.getApplication().toString());
+            prst.setString(5, "");
+            prst.execute();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
     public String getPasswordForUser() {
         return null;
     }
