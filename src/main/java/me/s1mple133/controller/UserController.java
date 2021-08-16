@@ -91,7 +91,7 @@ public class UserController {
      */
     public boolean register(String username, String password, String email) {
         try(PreparedStatement preparedStatement = Database.getInstance().getConnection()
-                .prepareStatement("INSERT INTO P_USER(u_id, u_name, u_pass, u_email) VALUES(?,?,?)")) {
+                .prepareStatement("INSERT INTO P_USER(u_id, u_name, u_pass, u_email) VALUES(?,?,?,?)")) {
             preparedStatement.setString(1, String.valueOf(UUID.randomUUID()));
             preparedStatement.setString(2, username);
             preparedStatement.setString(3, password);
