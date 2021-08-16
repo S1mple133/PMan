@@ -1,6 +1,5 @@
 package me.s1mple133.database;
 
-import javax.sql.DataSource;
 import java.sql.*;
 
 public class Database {
@@ -66,11 +65,11 @@ public class Database {
                     "    U_EMAIL VARCHAR(255) NOT NULL" +
                     ");" +
                     "CREATE TABLE P_Passwords (" +
-                    "                        P_ID VARCHAR(38) NOT NULL PRIMARY KEY," +
-                    "                        P_PASS VARCHAR(255) NOT NULL," +
-                    "                        P_USER VARCHAR(255) NOT NULL," +
-                    "                        P_USER_ID VARCHAR(38) NOT NULL," +
-                    "                        P_APPLICATION VARCHAR(255) NOT NULL" +
+                "                        P_ID VARCHAR(38) NOT NULL PRIMARY KEY," +
+                "                        P_PASS VARCHAR(255) NOT NULL," +
+                "                        P_USER VARCHAR(255) NOT NULL," +
+                "                        P_USER_ID VARCHAR(38) NOT NULL," +
+                "                        P_APPLICATION VARCHAR(255) NOT NULL" +
                     ");");
             stmt.execute();
         } catch (SQLException throwables) {
