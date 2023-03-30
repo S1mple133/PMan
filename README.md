@@ -1,4 +1,4 @@
-# RESTFul PasswordManager project
+# RESTFul PasswordManager project (ABANDONED)
 
 ## Setup
 
